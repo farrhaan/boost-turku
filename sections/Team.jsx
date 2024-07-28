@@ -32,7 +32,7 @@ export default function Team({ teamMembers }) {
                                 {
                                     item.teamMembers.map((member, i) => {
                                         return (
-                                            <TeamCard key={i} name={member.name} title={member.title} imgSrc={member.imgSrc} email={member.email} />
+                                            <TeamCard key={i} keyI={i} name={member.name} title={member.title} imgSrc={member.imgSrc} email={member.email} />
                                         )
                                     })
                                 }

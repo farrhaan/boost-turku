@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div className="gradient-04 z-0" />
         <TextBlock title="Boost's Vision" points={ourVisionPoints} />
         {teamMembers && <Team teamMembers={teamMembers} />}
-        <div className='bg-white mt-24 mb-14'>
+        <div className='bg-white py-10 mt-24 mb-14'>
           <Partners partnersList={keyPartners} />
           <Partners partnersList={partners} />
         </div>

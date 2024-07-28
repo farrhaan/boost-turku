@@ -7,6 +7,7 @@ import styles from "../styles";
 import { footerVariants } from "../utils/motion";
 import Image from "next/image";
 import ThemeSwitch from "@/components/themeSwitch";
+import Link from "next/link";
 
 const Footer = () => (
   <motion.footer
@@ -45,12 +46,14 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <Image
-            src="/boost/boost-logo.png"
-            alt="Boost Logo"
-            width={120}
-            height={40}
-          />
+          <Link href="/">
+            <Image
+              src="/boost/boost-logo.png"
+              alt="Boost Logo"
+              width={120}
+              height={40}
+            />
+          </Link>
 
           <p className="text-[14px] font-normal text-white opacity-50">
             Copyright © 2024. All rights reserved.
