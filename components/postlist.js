@@ -41,7 +41,7 @@ export default function PostList({
                 ? "aspect-[5/4]"
                 : "aspect-square"
             )}
-            href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+            href={`/blog/${pathPrefix ? `${pathPrefix}/` : ""}${
               post.slug.current
             }`}>
             {imageProps ? (
@@ -84,7 +84,7 @@ export default function PostList({
                 "mt-2    dark:text-white"
               )}>
               <Link
-                href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                href={`/blog/${pathPrefix ? `${pathPrefix}/` : ""}${
                   post.slug.current
                 }`}>
                 <span
@@ -104,7 +104,7 @@ export default function PostList({
               {post.excerpt && (
                 <p className="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
                   <Link
-                    href={`/post/${
+                    href={`/blog/${
                       pathPrefix ? `${pathPrefix}/` : ""
                     }${post.slug.current}`}>
                     {post.excerpt}

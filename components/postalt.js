@@ -30,7 +30,7 @@ export default function PostAlt({
             "relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800",
             aspect === "landscape" ? "aspect-video" : "aspect-square"
           )}>
-          <Link href={`/post/minimal/${post.slug.current}`}>
+          <Link href={`/blog/minimal/${post.slug.current}`}>
             {imageProps ? (
               <Image
                 src={imageProps.src}
@@ -76,7 +76,7 @@ export default function PostAlt({
               "mt-2 text-xl font-semibold tracking-normal line-clamp-2 text-brand-primary dark:text-white",
               featured ? "lg:text-3xl" : "lg:text-2xl"
             )}>
-            <Link href={`/post/minimal/${post.slug.current}`}>
+            <Link href={`/blog/minimal/${post.slug.current}`}>
               <span
                 className="bg-gradient-to-r from-black to-black dark:from-white dark:to-white
         bg-[length:0px_2px]
