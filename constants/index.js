@@ -3,26 +3,31 @@ export const exploreWorlds = [
     id: 'world-1',
     imgUrl: '/boost/about-boost.png',
     title: 'What We Do',
+    url: '/about'
   },
   {
     id: 'world-2',
     imgUrl: '/boost/boost-events.jpg',
     title: 'Events',
+    url: '/events'
   },
   {
     id: 'world-3',
     imgUrl: '/boost/startup-marathon.png',
     title: 'Startup Marathon',
+    url: '/'
   },
   {
     id: 'world-4',
     imgUrl: '/boost/startup-journey.png',
     title: 'Startup Journey',
+    url: '/'
   },
   {
     id: 'world-5',
     imgUrl: '/boost/blog.png',
-    title: 'Blog',
+    title: 'Blogs',
+    url: '/blogs'
   },
 ];
 
