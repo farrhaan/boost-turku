@@ -53,7 +53,7 @@ const Navbar = () => {
       whileInView='show'
       className={`${styles.xPaddings} py-8 relative z-50`}>
       <div className='absolute w-[50%] inset-0 gradient-01' />
-      <div className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8 relative`}>
+      <div className={`${styles.innerWidth} mx-auto flex justify-between items-end gap-8 relative`}>
         <Link href="/">
           <Image
             src='/boost/boost-logo-white.png'
@@ -76,9 +76,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>}
-          <ul className={`hidden lg:flex gap-8 text-white font-4xl`}>
+          <ul className={`hidden lg:flex gap-8 text-white text-xl `}>
             {navLinks.map((link, index) => (
-              <li key={index} className="text-white font-4xl">
+              <li key={index} className="hover:text-brand-red">
                 <Link href={link.href}>
                   {link.title}
                 </Link>
