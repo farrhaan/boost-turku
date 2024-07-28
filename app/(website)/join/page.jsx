@@ -71,7 +71,7 @@ export default function JoinPage() {
                         <select
                             id="gender"
                             name="gender"
-                            className="block flex-1 border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
+                            className="block flex-1 w-full border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
                         >
                             <option className="text-brand-grey" disabled selected value>Select Gender</option>
                             <option className="text-brand-red">Male</option>
@@ -84,7 +84,7 @@ export default function JoinPage() {
                         <select
                             id="university"
                             name="university"
-                            className="block flex-1 border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
+                            className="block flex-1 w-full border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
                         >
                             <option className="text-brand-grey" disabled selected value>{`What's your university`}</option>
                             <option className="text-brand-red">University of Turku</option>
@@ -110,7 +110,7 @@ export default function JoinPage() {
                         <select
                             id="prog"
                             name="prog"
-                            className="block flex-1 border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
+                            className="block flex-1 w-full border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
                         >
                             <option className="text-brand-grey" disabled selected value>{`Select Option`}</option>
                             <option className="text-brand-red">Yes</option>

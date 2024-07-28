@@ -14,7 +14,7 @@ const Hero = () => (
       className={`${styles.innerWidth2} mx-auto flex flex-col`}>
       <div className='relative z-10 flex flex-col items-center justify-center'>
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          <span className='text-brand-red text-[124px]'>
+          <span className='text-brand-red text-6xl lg:text-[124px]'>
             BOOSTING
           </span>
           <br />
