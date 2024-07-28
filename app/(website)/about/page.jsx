@@ -1,11 +1,11 @@
 "use client"
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../../sections';
+import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../../../sections';
 import { motion } from "framer-motion";
-import styles from "../../styles";
+import styles from "../../../styles";
 import TextBlock from "@/components/TextBlock";
 import Partners from '@/components/Partners';
 
-import { story, whatWeDoPoints, ourVisionPoints, keyPartners, partners, teamMembers } from '../../constants'
+import { story, whatWeDoPoints, ourVisionPoints, keyPartners, partners, teamMembers } from '../../../constants'
 import TeamCard from '@/components/TeamCard';
 import Team from '@/sections/Team';
 
