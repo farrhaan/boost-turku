@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'primary-black': 'rgb(12 0 0)',
         'secondary-white': '#c7c7c7',
+        'brand-grey': '#BCBEC0',
         'brand-red': "#C52127"
       },
       transitionTimingFunction: {

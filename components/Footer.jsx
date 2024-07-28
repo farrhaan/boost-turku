@@ -41,12 +41,12 @@ const Footer = () => (
         <div className='mb-[50px] h-[2px] bg-white opacity-10' />
 
         <div className='flex items-center justify-between flex-wrap gap-4'>
-          <Image
-            src='/boost/boost-logo.png'
-            alt='Boost Logo'
-            width={120}
-            height={40}
-          />
+        <Image
+        src='/boost/boost-logo.png'
+        alt='Boost Logo'
+        width={120}
+        height={40}
+      />
 
           <p className='font-normal text-[14px] text-white opacity-50'>
             Copyright © 2024. All rights reserved.
