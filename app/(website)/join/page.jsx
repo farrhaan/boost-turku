@@ -3,8 +3,7 @@ import TextBlock from "@/components/TextBlock";
 import { motion } from "framer-motion";
 import { fadeIn } from '@/utils/motion';
 import styles from "@/styles";
-import { TypingText, TitleText } from '@/components/CustomTexts';
-import { GetStarted, WhatsNew } from "@/sections";
+import { GetStarted } from "@/sections";
 
 export default function JoinPage() {
     const whyJoin = [
@@ -16,7 +15,7 @@ export default function JoinPage() {
         "There is no membership fee",
     ]
     return (
-        <div className="bg-primary-black overflow-hidden min-h-[80vh]">
+        <div className="bg-primary-black overflow-hidden min-h-[80vh] my-14 lg:my-32">
             <motion.div
                 initial='hidden'
                 variants={fadeIn('right', 'spring', 0.75, 1)}
@@ -32,7 +31,7 @@ export default function JoinPage() {
                 title="Become a Member"
                 desc="Join the Boost community and start building your dreams."
                 points={whyJoin}
-                imgSrc={"/boost/why-boost.jpg"}
+                imgSrc={"/boost/boost-events.jpg"}
             />
             <motion.div
                 initial='hidden'

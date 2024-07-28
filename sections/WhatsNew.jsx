@@ -8,7 +8,7 @@ import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
 const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 my-20`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -39,7 +39,7 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
         <img
           src={imgSrc}
           alt={title}
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[90%] h-[90%] object-contain "
         />
       </motion.div>
     </motion.div>

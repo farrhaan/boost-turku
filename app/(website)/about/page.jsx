@@ -8,7 +8,7 @@ import { story, whatWeDoPoints, ourVisionPoints, keyPartners, partners, teamMemb
 
 export default function AboutPage() {
   return (
-    <div className="bg-primary-black overflow-hidden">
+    <div className="bg-primary-black overflow-hidden my-14 lg:my-32">
       <TextBlock title="Our Story" desc={story} />
       <div className="relative">
         <GetStarted

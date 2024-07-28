@@ -3,12 +3,10 @@ import TextBlock from "@/components/TextBlock";
 import { motion } from "framer-motion";
 import { fadeIn } from '@/utils/motion';
 import styles from "@/styles";
-import { TypingText, TitleText } from '@/components/CustomTexts';
-import { GetStarted, WhatsNew } from "@/sections";
 
 export default function ContactPage() {
     return (
-        <div className="bg-primary-black overflow-hidden min-h-[80vh]">
+        <div className="bg-primary-black overflow-hidden min-h-[80vh] my-14 lg:my-32">
             <motion.div
                 initial='hidden'
                 variants={fadeIn('right', 'spring', 0.75, 1)}

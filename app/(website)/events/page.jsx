@@ -8,7 +8,7 @@ export default function EventsPage() {
     const eventsText = "Ignite your entrepreneurial spirit, connect, and conquer together in our vibrant community of innovators. "
     const eventTextII = "Boost actively organizes and participates in multitude of events and programs, whether spearheaded by us or collaboratively co-created with our partners."
     return (
-        <div className="bg-primary-black overflow-hidden min-h-[65vh]">
+        <div className="bg-primary-black overflow-hidden min-h-[65vh] my-14 lg:my-32">
             <TextBlock title="Events" />
             <motion.div
                 initial='hidden'
