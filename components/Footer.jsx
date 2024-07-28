@@ -60,7 +60,7 @@ const Footer = () => (
           </p>
 
           <div className="flex gap-4">
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
             {socials.map(social => (
               <a key={social.name} href={social.link}>
                 <img
