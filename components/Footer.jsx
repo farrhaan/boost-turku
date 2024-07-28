@@ -55,7 +55,7 @@ const Footer = () => (
             />
           </Link>
 
-          <div className="text-center">
+          <div className="text-start lg:text-center">
             <p className="text-lg font-bold text-white mb-2">
               Boost Turku Entrepreneurship Society
             </p>
