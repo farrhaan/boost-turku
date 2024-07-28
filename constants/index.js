@@ -60,40 +60,14 @@ export const partners = {
     },]
 }
 
-export const newFeatures = [
-  {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
-    subtitle:
-      'we have the latest update with new world for you to try never mind',
-  },
-  {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-      'In the latest update, your eyes are narrow, making the world more realistic than ever',
-  },
-];
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse and be happy :)',
+    imgUrl: '',
+    title: 'Title',
     subtitle:
       'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
-  },
-  {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
-    subtitle:
-      'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
-  },
-  {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
-    subtitle:
-      'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
-  },
+  }
 ];
 
 export const teamMembers = [{
@@ -108,7 +82,7 @@ export const teamMembers = [{
     {
       name: 'Atte Vitikainen',
       title: 'Vice Chair',
-      imgSrc: '/boost/Atte.jpg',
+      imgSrc: '/boost/atte-v.jpg',
       email: ''
     },
     {
@@ -126,7 +100,7 @@ export const teamMembers = [{
     {
       name: 'Juho Aaltonen',
       title: 'Head of External Relations',
-      imgSrc: '/boost/Juho.jpg',
+      imgSrc: '/boost/juho-a.jpg',
       email: ''
     },
     {
