@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Entrepreneurship society of Turku inspiring startups since 2009."
 };
+
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
     <Hero />
