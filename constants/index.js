@@ -26,11 +26,34 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading precaution to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
-];
+//About Page
+export const story = `Little more than a decade ago the startup scene in Finland was really non-existent. A group of young and enthusiastic individuals in Turku thought this needed to change. They founded Boost Turku in 2009 to inspire and support young entrepreneurs. Since that fateful day there has been countless success stories brought to life at Boost.`
+export const whatWeDoPoints = [`Community of like-minded ambitious students`, `Hosting and being involved in 100+ events annually`, `Organizing 8-week accelerator program Startup Journey every summer since 2011`, `Serving as a stomping ground for entrepreneurs from all fields of commerce `]
+export const ourVisionPoints = [`We strive to create an entrepreneurship ecosystem that supports early stage entrepreneurs.`, `We want to raise more successful startups and entrepreneurial-minded students in Turku.`, `We wish to erase the gap between wanting to start a business and starting a business.`]
+export const keyPartners = {
+  title: "key partners",
+  items: [{
+    name: "University of Turku",
+    imgSrc: "/boost/utu.png"
+  },
+  {
+    name: "Turku Business Region",
+    imgSrc: "/boost/turki-biz.png"
+  },]
+}
+
+export const partners = {
+  title: "partners",
+  items: [
+    {
+      name: "Turku AMK",
+      imgSrc: "/boost/turku-amk.png"
+    },
+    {
+      name: "Abo Akademi",
+      imgSrc: "/boost/abo-akademi.png"
+    },]
+}
 
 export const newFeatures = [
   {
@@ -67,6 +90,67 @@ export const insights = [
       'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
   },
 ];
+
+export const teamMembers = [{
+  teamTitle: "Board 2024",
+  teamMembers: [
+    {
+      name: 'Sami Al-Khafaji',
+      title: 'Chairperson of the Board',
+      imgSrc: '/boost/sami.jpg',
+      email: ''
+    },
+    {
+      name: 'Atte Vitikainen',
+      title: 'Vice Chair',
+      imgSrc: '/boost/Atte.jpg',
+      email: ''
+    },
+    {
+      name: 'Oliver Seila',
+      title: 'Head of Finance',
+      imgSrc: '/boost/oliver.jpg',
+      email: ''
+    },
+    {
+      name: 'Ella Jokipii',
+      title: 'Head of Marketing',
+      imgSrc: '/boost/ella.jpg',
+      email: ''
+    },
+    {
+      name: 'Juho Aaltonen',
+      title: 'Head of External Relations',
+      imgSrc: '/boost/Juho.jpg',
+      email: ''
+    },
+    {
+      name: 'Ahmed Faik Demirel',
+      title: 'Head of Community',
+      imgSrc: '/boost/faik.jpg',
+      email: ''
+    },
+    {
+      name: 'Juhana Kuparinen',
+      title: 'Head of Startups',
+      imgSrc: '/boost/juhana.jpg',
+      email: ''
+    },
+  ]
+}, {
+  teamTitle: "Executive Director & Head Coach",
+  teamMembers: [
+    {
+      name: 'Lauri Koittola',
+      title: '',
+      imgSrc: '/boost/lauri.jpg',
+      email: 'lauri@boostturku.com'
+    }
+  ]
+}]
+
+
+//<<========About Page
 
 export const socials = [
   {
