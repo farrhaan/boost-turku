@@ -45,7 +45,7 @@ const Footer = () => (
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
-        <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex flex-wrap items-start justify-between gap-4">
           <Link href="/">
             <Image
               src="/boost/boost-logo.png"
@@ -55,21 +55,39 @@ const Footer = () => (
             />
           </Link>
 
-          <p className="text-[14px] font-normal text-white opacity-50">
-            Copyright © 2024. All rights reserved.
-          </p>
+          <div className="text-center">
+            <p className="text-lg font-bold text-white mb-2">
+              Boost Turku Entrepreneurship Society
+            </p>
+            <p className="text-white">
+              SparkUp<br />
+              Tykistökatu 4B<br />
+              20520 Turku<br /><br />
+            </p>
 
-          <div className="flex gap-4">
-            {/* <ThemeSwitch /> */}
-            {socials.map(social => (
-              <a key={social.name} href={social.link}>
-                <img
-                  src={social.url}
-                  alt={social.name}
-                  className="h-[24px] w-[24px] object-contain"
-                />
-              </a>
-            ))}
+          </div>
+
+          <div>
+            <div className="flex gap-4 mb-2">
+              {/* <ThemeSwitch /> */}
+              <Link href="/contact">
+                <p className="text-lg underline text-white">
+                  Contact Us
+                </p>
+              </Link>
+              {socials.map(social => (
+                <a key={social.name} href={social.link}>
+                  <img
+                    src={social.url}
+                    alt={social.name}
+                    className="h-[24px] w-[24px] object-contain"
+                  />
+                </a>
+              ))}
+            </div>
+            <a href="mailto:info@boostturku.com" className="text-brand-grey underline">
+              info@boostturku.com
+            </a>
           </div>
         </div>
       </div>
