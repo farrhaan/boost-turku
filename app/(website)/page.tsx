@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { About, Explore, Hero } from '../sections';
+import { About, Explore, Hero } from "@/sections";
 
 export const metadata: Metadata = {
   title: "Boost Turku",
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const Page = () => (
-  <div className="bg-primary-black overflow-hidden">
+  <div className="overflow-hidden bg-primary-black">
     <Hero />
     <div className="relative">
       <About />

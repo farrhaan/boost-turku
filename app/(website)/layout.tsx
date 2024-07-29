@@ -1,10 +1,9 @@
-'use client'
 import { Inter, Roboto } from "next/font/google";
 import { cx } from "@/utils/all";
 import { Footer, Navbar } from "@/components";
 import { Providers } from "./providers";
-import "../styles/globals.css";
-import { usePathname } from 'next/navigation';
+import NextTopLoader from "nextjs-toploader";
+import "@/styles/globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +17,6 @@ const roboto = Roboto({
 });
 
 const RootLayout = ({ children }) => {
-  const router = usePathname();
   return (
     <html
       lang="en"
@@ -26,18 +24,15 @@ const RootLayout = ({ children }) => {
       className={cx(inter.variable, roboto.variable)}>
       <body>
         <Providers>
-          {router?.includes("studio")
-            ? <div className="overflow-hidden bg-primary-black">
-              {children}
-            </div>
-            : <div className="overflow-hidden bg-primary-black">
-              <Navbar />
-              {children}
-              <Footer />
-            </div>}
+          <NextTopLoader showSpinner={false} color="#C52127" />
+          <div className="overflow-hidden bg-primary-black">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>
-  )
-}
+  );
+};
 export default RootLayout;
