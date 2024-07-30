@@ -9,6 +9,7 @@ export default function TextBlock({ title, desc, points }) {
             variants={fadeIn('right', 'spring', 0.75, 1)}
             animate='visible'
             whileInView='show'
+            viewport={{ once: true }}
             className={`${styles.xPaddings} py-8 relative`}>
             <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
                 <div className='flex items-center justify-between flex-wrap gap-5'>
