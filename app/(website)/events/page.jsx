@@ -15,6 +15,7 @@ export default function EventsPage() {
                 variants={fadeIn('up', 'spring', 0.75, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative`}>
                 <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8 mb-10`}>
                     <p className='font-bold text-3xl'>{eventsText}</p>

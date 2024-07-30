@@ -18,6 +18,7 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="flex-[0.95] flex justify-center flex-col"
       >
         {smallTitle && <TypingText title={"| " + smallTitle} />}
@@ -34,6 +35,7 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
 
       <motion.div
         variants={planetVariants('right')}
+        viewport={{ once: true }}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img

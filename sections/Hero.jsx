@@ -13,7 +13,9 @@ const Hero = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth2} mx-auto flex flex-col`}>
       <div className='relative z-10 flex flex-col items-center justify-center'>
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+        <motion.h1
+          viewport={{ once: true }}
+          variants={textVariant(1.1)} className={styles.heroHeading}>
           <span className='text-brand-red text-6xl lg:text-[124px]'>
             BOOSTING
           </span>
@@ -29,6 +31,7 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
+        viewport={{ once: true }}
         className='relative w-full lg:mt-[44px] md:mt-[18px] mt-[15px]  2xl:pl-[280px]'>
         <div className='absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px]' />
         <img
@@ -42,6 +45,7 @@ const Hero = () => (
           <motion.img
             src='/stamp.png'
             alt='stamp'
+            viewport={{ once: true }}
             className='sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain '
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 7, repeatType: "loop" }}

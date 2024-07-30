@@ -21,6 +21,7 @@ export default function JoinPage() {
                 variants={fadeIn('right', 'spring', 0.75, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative`}>
                 {/* <TypingText title="| Are you ready to start building?" textStyles={"text-center"} /> */}
                 <TextBlock title="Join the Community & get involved" />
@@ -38,6 +39,7 @@ export default function JoinPage() {
                 variants={fadeIn('up', 'spring', 0.5, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative w-[320px] md:w-[600px] mx-auto border-2 border-brand-red rounded-xl my-10`}>
                 <p className="text-2xl text-center text-brand-red my-10 font-bold">Fill in the Form to Join our Community </p>
                 <form action={process.env.JOIN_FORM_KEY} className="flex flex-col">

@@ -24,6 +24,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
       </motion.div>}
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="flex-[0.75] flex justify-center flex-col"
       >
         {smallTitle && <TypingText title={"| " + smallTitle} />}

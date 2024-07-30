@@ -12,6 +12,7 @@ export default function Team({ teamMembers }) {
                 initial='hidden'
                 variants={fadeIn('up', 'spring', 0, 1)}
                 animate='visible'
+                viewport={{ once: true }}
                 whileInView='show' >
                 <h4 className='font-bold md:text-[64px] text-[44px] text-white'>
                     Our Team
@@ -25,6 +26,7 @@ export default function Team({ teamMembers }) {
                                 initial='hidden'
                                 variants={fadeIn('up', 'spring', 0, 1)}
                                 animate='visible'
+                                viewport={{ once: true }}
                                 whileInView='show' >
                                 <h2 className="text-brand-red text-4xl font-black text-center mb-10">{item.teamTitle}</h2>
                             </motion.div>

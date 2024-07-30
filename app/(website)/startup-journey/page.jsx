@@ -29,6 +29,7 @@ export default function StartupJourney() {
                 variants={fadeIn('up', 'spring', 0.75, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative`}>
                 <GetStarted title="What is Startup Journey" desc="Startup Journey is an intensive 8-week startup accelerator program designed to help early-stage startups take a huge step forward in their development. Over the course of the program, you'll work closely with experienced mentors and industry experts to refine your business idea, create a prototype, conduct market research, and prepare for launch. At the end of the program, you'll have the opportunity to pitch your startup to investors and continue developing your idea with ongoing support and guidance from the Startup Journey community. "
                     imgSrc="/boost/sj.jpg" />

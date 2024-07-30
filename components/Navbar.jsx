@@ -51,6 +51,7 @@ const Navbar = () => {
       variants={navVariants}
       initial='hidden'
       whileInView='show'
+      viewport={{ once: true }}
       className={`${styles.xPaddings} py-8 relative z-50`}>
       <div className='absolute w-[50%] inset-0 gradient-01' />
       <div className={`${styles.innerWidth} mx-auto flex justify-between items-end gap-8 relative`}>

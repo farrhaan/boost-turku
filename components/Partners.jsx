@@ -10,6 +10,7 @@ export default function Partners({ partnersList }) {
             variants={fadeIn('up', 'spring', 0.75, 1)}
             animate='visible'
             whileInView='show'
+            viewport={{ once: true }}
             className={`py-10 relative`}>
             <div className={`mx-auto flex flex-col gap-8`}>
                 <div className='flex items-center justify-between flex-wrap gap-5'>
