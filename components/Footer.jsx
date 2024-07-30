@@ -1,19 +1,12 @@
 "use client";
-
-import { motion } from "framer-motion";
-import { socials } from "../constants";
-
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
 import Image from "next/image";
-import ThemeSwitch from "@/components/themeSwitch";
 import Link from "next/link";
 
+import { socials } from "@/constants";
+import styles from "@/styles";
+
 const Footer = () => (
-  <motion.footer
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
+  <div
     className={`${styles.xPaddings} relative py-8`}>
     <div className="footer-gradient" />
     <div
@@ -92,7 +85,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  </motion.footer>
+  </div>
 );
 
 export default Footer;
