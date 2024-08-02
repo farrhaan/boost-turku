@@ -32,7 +32,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
         {desc && <p className='text-white'>
           {desc}
         </p>}
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        {points && <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {points?.map((features, index) => (
             <StartSteps
               key={features}
@@ -40,7 +40,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
               text={features}
             />
           ))}
-        </div>
+        </div>}
       </motion.div>
     </motion.div>
   </section>
