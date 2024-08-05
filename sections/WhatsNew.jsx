@@ -27,8 +27,10 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
           {desc}
         </p>}
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {points.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
+          {points?.map((feature, i) => (
+            <div key={i}>
+            <NewFeatures title={feature.title} description={feature.description} />
+              </div>
           ))}
         </div>
       </motion.div>
