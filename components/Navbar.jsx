@@ -1,11 +1,11 @@
 "use client";
-
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+import styles from "@/styles";
+import { navVariants } from "@/utils/motion";
 
 const navLinks = [
   {
@@ -42,10 +42,6 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
-  useEffect(() => {
-    console.log({ isNavOpen })
-  }, [isNavOpen])
-
   return (
     <motion.nav
       variants={navVariants}
@@ -77,7 +73,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>}
-          <ul className={`hidden lg:flex gap-8 text-white text-xl `}>
+          <ul className={`hidden lg:flex gap-8 text-white text-lg `}>
             {navLinks.map((link, index) => (
               <li key={index} className="hover:text-brand-red">
                 <Link href={link.href}>

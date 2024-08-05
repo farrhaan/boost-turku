@@ -1,28 +1,18 @@
 import { defineField, defineType } from 'sanity'
 
-export const imageSection = defineType({
-  name: 'imageSection',
+export const heroSection = defineType({
+  name: 'heroSection',
   type: 'object',
-  title: 'Image Section',
+  title: 'Hero Section',
   fields: [
+    defineField({ name: 'title', type: 'string' }),
     defineField({
-      name: 'heading',
+      name: 'mainText',
       type: 'string',
     }),
     defineField({
-      name: 'subHeading',
+      name: 'subText',
       type: 'string',
-    }),
-    defineField({
-      name: 'description',
-      type: 'text',
-    }),
-    defineField({
-      name: 'points',
-      type: 'array',
-      of: [
-        { name: "point", type: "string" }
-      ]
     }),
     defineField({
       name: 'image',
@@ -39,4 +29,4 @@ export const imageSection = defineType({
   ],
 })
 
-export default imageSection;
+export default heroSection;

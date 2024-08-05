@@ -28,7 +28,7 @@ export default function EventsPage() {
 
                     <p className='text-2xl'>You can find all of our events in <a href="lu.ma/boost" className='text-brand-red'>lu.ma/boost</a></p>
 
-                    <div className='w-[320px] md:w-[450px] h-[420px] md:h-[600px] mx-auto my-6'>
+                    <div className='w-[320px] md:w-[75vw] h-[420px] md:h-[600px] mx-auto my-6'>
                         <iframe src="https://lu.ma/embed/calendar/cal-DFTEOW6z93AOspN/events" width={"100%"} height={"100%"} />
                     </div>
                 </div>

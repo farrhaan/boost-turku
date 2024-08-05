@@ -5,7 +5,7 @@ import { TypingText } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
-const About = () => (
+const About = ({aboutText}) => (
   <section className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
 
@@ -26,7 +26,7 @@ const About = () => (
         viewport={{ once: true }}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-brand-red"> Boost </span>is a Turku-based entrepreneurship society that inspires and helps students become startup entrepreneurs. We are a student-run organization who organize entrepreneurship-related events, accelerator programs and offer mentoring sessions for startups and for founders-to-be.
+        {aboutText}
       </motion.p>
 
       <motion.img

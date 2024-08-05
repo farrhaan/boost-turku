@@ -1,9 +1,14 @@
 import { defineField, defineType } from 'sanity'
 
+const textType = defineType({
+    name: 'text',
+    type: 'text',
+})
+
 export const feedBackSection = defineType({
     name: 'feedBackSection',
     type: 'object',
-    title: 'Text Block',
+    title: 'Feedback Section',
     fields: [
         defineField({
             name: 'personName',
@@ -17,8 +22,13 @@ export const feedBackSection = defineType({
         }),
         defineField({
             name: 'message',
+            type: "text",
+            title: "Feedback Message",
+        }),
+        defineField({
+            name: 'image',
             type: "image",
-            title: "Image",
+            title: "Feedback Image",
         }),
     ],
 })

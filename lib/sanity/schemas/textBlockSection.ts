@@ -13,6 +13,13 @@ export const textBlockSection = defineType({
             name: 'descriptionText',
             type: 'text',
         }),
+        defineField({
+            name: 'points',
+            type: 'array',
+            of: [
+                { name: "point", type: "string" }
+            ]
+        }),
     ],
 })
 

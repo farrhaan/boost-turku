@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
-const Hero = () => (
+const Hero = ({ mainText, subText, imgSrc, imgAlt }) => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
       variants={staggerContainer}
@@ -17,10 +17,10 @@ const Hero = () => (
           viewport={{ once: true }}
           variants={textVariant(1.1)} className={styles.heroHeading}>
           <span className='text-brand-red text-6xl lg:text-[124px]'>
-            BOOSTING
+            {mainText || ""}
           </span>
           <br />
-          STUDENT ENTREPRENEURSHIP IN TURKU
+          {subText || ""}
         </motion.h1>
         {/* <motion.div
           variants={textVariant(1.2)}
@@ -35,8 +35,8 @@ const Hero = () => (
         className='relative w-full lg:mt-[44px] md:mt-[18px] mt-[15px]  2xl:pl-[280px]'>
         <div className='absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px]' />
         <img
-          src='/boost/welcome.jpg'
-          alt='cover'
+          src={imgSrc}
+          alt={imgAlt || "Boost"}
           className='w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative'
         />
 

@@ -1,9 +1,9 @@
 import { defineArrayMember, defineField, defineType } from 'sanity'
 // schemas/page.js
-const page = defineType({
-  name: 'page',
+const projects = defineType({
+  name: 'projects',
   type: 'document',
-  title: 'Page',
+  title: 'Projects',
   fields: [
     defineField({ name: 'title', type: 'string' }),
     defineField({
@@ -21,6 +21,10 @@ const page = defineType({
       title: 'Page builder',
       of: [
         defineArrayMember({
+          name: 'plainText',
+          type: "plainText"
+        }),
+        defineArrayMember({
           name: 'imageSection',
           type: 'imageSection',
         }),
@@ -36,10 +40,10 @@ const page = defineType({
           name: 'feedBackSection',
           type: 'feedBackSection',
         }),
-        // defineArrayMember({
-        //   name: 'buttonSection',
-        //   type: 'buttonSection',
-        // }),
+        defineArrayMember({
+          name: 'descriptiveButton',
+          type: 'descriptiveButton',
+        }),
         // defineArrayMember({
         //   name: 'videoSection',
         //   type: 'videoSection',
@@ -49,4 +53,4 @@ const page = defineType({
   ],
 })
 
-export default page;
+export default projects;

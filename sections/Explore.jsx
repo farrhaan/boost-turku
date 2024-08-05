@@ -7,10 +7,8 @@ import styles from '../styles';
 import { TypingText, ExploreCard, TitleText } from '../components';
 import { staggerContainer } from '../utils/motion';
 
-import { exploreWorlds } from '../constants';
-
-const Explore = () => {
-  const [active, setActive] = useState('world-2');
+const Explore = ({exploreLinks}) => {
+  const [active, setActive] = useState('card-2');
 
   return (
     <section className={`${styles.paddings} relative z-10`} id="explore">
@@ -25,7 +23,7 @@ const Explore = () => {
         <TitleText title={<>Choose what you want <br className="md:block hidden " />to Explore More</>} textStyles="text-center" />
 
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {exploreWorlds.map((world, index) => (
+          {exploreLinks.map((world, index) => (
             <ExploreCard
               key={world.id}
               {...world}

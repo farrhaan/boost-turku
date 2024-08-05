@@ -5,10 +5,14 @@ import { defineField, defineType } from 'sanity'
 export const imageSection2 = defineType({
     name: 'imageSection2',
     type: 'object',
-    title: 'Image Section 2',
+    title: 'Image Section II',
     fields: [
         defineField({
             name: 'heading',
+            type: 'string',
+        }),
+        defineField({
+            name: 'subHeading',
             type: 'string',
         }),
         defineField({
@@ -17,8 +21,13 @@ export const imageSection2 = defineType({
         }),
         defineField({
             name: 'bulletPoints',
-            type: "array",
-            of: [{ type: "string", name: "title" }, { type: "string", name: "description" }]
+            type: 'array',
+            of: [{
+                type: "object", name: "Point", title: "Point", fields: [
+                    defineField({ type: "string", name: "title", title: "Title" }),
+                    defineField({ type: "string", name: "description", title: "Description" })
+                ]
+            }]
         }),
         defineField({
             name: 'image',

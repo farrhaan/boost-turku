@@ -11,6 +11,7 @@ export default function AboutPage() {
     <div className="bg-primary-black overflow-hidden my-14 lg:my-32">
       <TextBlock title="Our Story" desc={story} />
       <div className="relative">
+        {/* Image Section */}
         <GetStarted
           smallTitle="How's it going"
           title="What we do"

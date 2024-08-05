@@ -1,40 +1,10 @@
-export const exploreWorlds = [
-  {
-    id: 'world-1',
-    imgUrl: '/boost/about-boost.png',
-    title: 'What We Do',
-    url: '/about'
-  },
-  {
-    id: 'world-2',
-    imgUrl: '/boost/boost-events.jpg',
-    title: 'Events',
-    url: '/events'
-  },
-  {
-    id: 'world-3',
-    imgUrl: '/boost/startup-marathon.png',
-    title: 'Startup Marathon',
-    url: '/'
-  },
-  {
-    id: 'world-4',
-    imgUrl: '/boost/startup-journey.png',
-    title: 'Startup Journey',
-    url: '/'
-  },
-  {
-    id: 'world-5',
-    imgUrl: '/boost/blog.png',
-    title: 'Blogs',
-    url: '/blogs'
-  },
-];
-
 //About Page
 export const story = `Little more than a decade ago the startup scene in Finland was really non-existent. A group of young and enthusiastic individuals in Turku thought this needed to change. They founded Boost Turku in 2009 to inspire and support young entrepreneurs. Since that fateful day there has been countless success stories brought to life at Boost.`
 export const whatWeDoPoints = [`Community of like-minded ambitious students`, `Hosting and being involved in 100+ events annually`, `Organizing 8-week accelerator program Startup Journey every summer since 2011`, `Serving as a stomping ground for entrepreneurs from all fields of commerce `]
-export const ourVisionPoints = [`We strive to create an entrepreneurship ecosystem that supports early stage entrepreneurs.`, `We want to raise more successful startups and entrepreneurial-minded students in Turku.`, `We wish to erase the gap between wanting to start a business and starting a business.`]
+export const ourVisionPoints = [
+  `We strive to create an entrepreneurship ecosystem that supports early stage entrepreneurs.`,
+  `We want to raise more successful startups and entrepreneurial-minded students in Turku.`,
+  `We wish to erase the gap between wanting to start a business and starting a business.`]
 export const keyPartners = {
   title: "key partners",
   items: [{
