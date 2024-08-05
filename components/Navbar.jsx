@@ -17,12 +17,8 @@ const navLinks = [
     href: "/events",
   },
   {
-    title: "Startup Marathon",
-    href: "/startup-marathon",
-  },
-  {
-    title: "Startup Journey",
-    href: "/startup-journey",
+    title: "Projects",
+    href: "/projects",
   },
   {
     title: "Blogs",

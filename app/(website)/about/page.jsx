@@ -5,7 +5,6 @@ import { GetStarted } from '@/sections';
 import Team from '@/sections/Team';
 import TextBlock from "@/components/TextBlock";
 import Partners from '@/components/Partners';
-import { story, whatWeDoPoints, ourVisionPoints, keyPartners, partners, teamMembers } from '@/constants'
 
 
 const aboutPageQuery = groq`
