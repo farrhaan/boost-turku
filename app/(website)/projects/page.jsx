@@ -1,9 +1,10 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
 import { client } from "@/lib/sanity/client";
 import { groq } from "next-sanity";
 
 import TextBlock from "@/components/TextBlock";
 import styles from "@/styles";
-import Link from "next/link";
 
 
 const projectsQuery = groq`
@@ -16,10 +17,8 @@ const projectsQuery = groq`
 const Projects = async () => {
     const projects = await client.fetch(projectsQuery);
 
-    if (!projects) {
-        return {
-            notFound: true
-        }
+    if (!projects || projects?.length === 0) {
+        notFound();
     }
 
     return (

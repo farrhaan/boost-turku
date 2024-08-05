@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { client } from "@/lib/sanity/client";
 import { groq } from "next-sanity";
@@ -71,7 +72,9 @@ const homePageQuery = groq`
 
 const Page = async () => {
   const homePageData = await client?.fetch(homePageQuery);
-
+  if (!homePageData || homePageData?.length === 0) {
+    notFound();
+  }
   const heroSectionData = homePageData?.sections?.find(
     section => section._type === "heroSection"
   );

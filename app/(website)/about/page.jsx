@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { client } from "@/lib/sanity/client";
 import { groq } from "next-sanity";
 
@@ -52,10 +53,8 @@ const aboutPageQuery = groq`
 
 const AboutPage = async () => {
   const aboutPageData = await client.fetch(aboutPageQuery);
-  if (!aboutPageData) {
-    return {
-      notFound: true,
-    };
+  if (!aboutPageData || aboutPageData?.length === 0) {
+    notFound();
   }
 
   return (

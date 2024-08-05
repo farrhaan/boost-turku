@@ -1,4 +1,4 @@
-// pages/[slug].js
+import { notFound } from 'next/navigation';
 import { client } from '@/lib/sanity/client';
 import { groq } from 'next-sanity';
 
@@ -71,10 +71,8 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
   const page = await client.fetch(pageQuery, { slug: params.slug });
 
-  if (!page) {
-    return {
-      notFound: true,
-    };
+  if (!page || page?.length === 0) {
+    notFound();
   }
 
   return (
