@@ -25,7 +25,7 @@ const Projects = async () => {
     return (
         <div className={`py-8 relative bg-primary-black overflow-hidden my-14 lg:my-32`}>
             <TextBlock title="Projects" />
-            <div className={`${styles.xPaddings}`}>
+            <div className={`${styles.innerWidth} mx-auto`}>
                 {
                     projects?.map((project, i) => {
                         return (
