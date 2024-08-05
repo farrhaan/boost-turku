@@ -5,17 +5,27 @@ export const partnersSection = defineType({
     type: 'object',
     title: 'Partners Section',
     fields: [
+        defineField({ name: "partnersDetail", title: "Partners Detail", type: "string" }),
         defineField({
-            name: 'partners',
-            type: 'array',
+            name: "partners",
+            type: "array",
             of: [
-                { name: "imgSrc", type: "image" }]
-        }),
-        defineField({
-            name: 'keyPartners',
-            type: 'array',
-            of: [
-                { name: "imgSrc", type: "image" }]
+                defineField({
+                    type: "object",
+                    name: "partnerDetails",
+                    fields: [
+
+                        defineField({
+                            name: 'title',
+                            type: 'string',
+                        }),
+                        defineField({
+                            name: 'partners',
+                            type: 'partner'
+                        })
+                    ]
+                })
+            ]
         })
     ],
 })

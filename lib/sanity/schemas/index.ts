@@ -19,6 +19,7 @@ import teamMember from './teamMember'
 import exploreCard from './exploreCard'
 import descriptiveButton from './descriptiveButton'
 import plainText from './plainText'
+import partner from './partner'
 
 export const schemaTypes = [
     post,
@@ -41,5 +42,6 @@ export const schemaTypes = [
     teamSection,
     teamMember,
     descriptiveButton,
-    plainText
+    plainText,
+    partner
 ]
