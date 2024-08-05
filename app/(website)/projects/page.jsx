@@ -29,8 +29,8 @@ const Projects = async () => {
                 {
                     projects?.map((project, i) => {
                         return (
-                            <Link href={`/${project.slug}`}>
-                                <div key={i} className={`my-5 bg-brand-red text-white font-bold text-2xl rounded-xl min-w-[300px] w-full py-4 text-center hover:scale-[1.02]`}>
+                            <Link href={`/${project.slug}`} key={i}>
+                                <div className={`my-5 bg-brand-red text-white font-bold text-2xl rounded-xl min-w-[300px] w-full py-4 text-center hover:scale-[1.02]`}>
                                     <h1>{project.title}</h1>
                                 </div>
                             </Link>
