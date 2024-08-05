@@ -10,11 +10,12 @@ const Feedback = ({ name, title, message, imgSrc }) => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="flex-[0.4] lg:max-[370px] flex justify-end lg:justify-center flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative"
       >
         <div className="feedback-gradient" />
@@ -29,11 +30,13 @@ const Feedback = ({ name, title, message, imgSrc }) => (
 
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="relative flex-1 flex justify-center item-center"
       >
         <img src={imgSrc} alt="planet" className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]" />
         <motion.div
           variants={zoomIn(0.4, 1)}
+          viewport={{ once: true }}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <img src="/stamp.png" alt="stamp" className="md:w-[170px] w-[115px]  md:h-[170px] h-[115px] object-contain" />

@@ -13,7 +13,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       {imgSrc && <motion.div
@@ -24,6 +24,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
       </motion.div>}
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="flex-[0.75] flex justify-center flex-col"
       >
         {smallTitle && <TypingText title={"| " + smallTitle} />}
@@ -31,7 +32,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
         {desc && <p className='text-white'>
           {desc}
         </p>}
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        {points && <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {points?.map((features, index) => (
             <StartSteps
               key={features}
@@ -39,7 +40,7 @@ const GetStarted = ({ smallTitle, title, desc, points, imgSrc }) => (
               text={features}
             />
           ))}
-        </div>
+        </div>}
       </motion.div>
     </motion.div>
   </section>

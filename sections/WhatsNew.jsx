@@ -13,11 +13,12 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
+        viewport={{ once: true }}
         className="flex-[0.95] flex justify-center flex-col"
       >
         {smallTitle && <TypingText title={"| " + smallTitle} />}
@@ -26,14 +27,17 @@ const WhatsNew = ({ smallTitle, title, desc, points, imgSrc }) => (
           {desc}
         </p>}
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {points.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
+          {points?.map((feature, i) => (
+            <div key={i}>
+            <NewFeatures title={feature.title} description={feature.description} />
+              </div>
           ))}
         </div>
       </motion.div>
 
       <motion.div
         variants={planetVariants('right')}
+        viewport={{ once: true }}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img

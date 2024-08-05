@@ -12,6 +12,7 @@ export default function ContactPage() {
                 variants={fadeIn('right', 'spring', 0.75, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative z-10`}>
                 <TextBlock title={`Let's get in touch!`} />
                 <p className={`${styles.innerWidth} mx-auto text-2xl`}>Ask us anything at <a href="mailto:info@boostturku.com" className='text-brand-red'>info@boostturku.com</a></p>
@@ -21,6 +22,7 @@ export default function ContactPage() {
                 initial='hidden'
                 variants={fadeIn('up', 'spring', 0.5, 1)}
                 animate='visible'
+                viewport={{ once: true }}
                 whileInView='show'
                 className={`${styles.xPaddings} py-8 relative w-[320px] md:w-[600px] mx-auto border-2 border-brand-red rounded-xl my-10`}>
                 <p className="text-2xl text-center text-brand-red my-10 font-bold">Send us a Quick Message!</p>
@@ -44,7 +46,6 @@ export default function ContactPage() {
                         required
                         className="block flex-1 border-2 pl-2 text-lg rounded-lg border-white bg-transparent py-2 mt-2 mb-5 text-white placeholder:text-brand-grey focus:ring-0"
                     ></textarea>
-
                     <button type="submit" className="bg-brand-red rounded-full text-xl py-2 my-10">Submit Form</button>
                 </form>
             </motion.div>
@@ -53,6 +54,7 @@ export default function ContactPage() {
                 variants={fadeIn('up', 'spring', 0.5, 1)}
                 animate='visible'
                 whileInView='show'
+                viewport={{ once: true }}
                 className={`${styles.xPaddings} py-8 relative flex gap-20 flex-wrap justify-evenly items-center my-40`}>
                 <div>
                     <h4 className='font-bold md:text-[64px] text-[44px] text-white capitalize mb-10'>

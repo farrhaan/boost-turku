@@ -10,6 +10,7 @@ export default function TeamCard({ keyI, name, title, imgSrc, email }) {
             variants={fadeIn('up', 'spring', keyI * 0.10, 1)}
             animate='visible'
             whileInView='show'
+            viewport={{ once: true }}
             key={keyI}
             className={`w-80 h-96 relative flex flex-col items-center bg-white rounded-2xl justify-between m-6`}>
             <img src={imgSrc} alt={name} className=" w-full px-16" />
